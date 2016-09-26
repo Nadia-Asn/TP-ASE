@@ -1,0 +1,18 @@
+
+CC = gcc
+FLAGSS = -m32
+#EXE=exe
+
+all: $(EXE)
+
+%.o:%.c %.h
+	$(CC) $(FLAGSS) $<
+
+#exe:exe.o
+#	$(CC) -o $@ $^ $(CFLAGS)
+
+
+.PHONY: clean
+
+clean:
+	rm -f *.o *.i *.s *~ $(EXE)

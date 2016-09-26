@@ -1,0 +1,36 @@
+Andrew Tanebaum
+Linus Torvalds
+
+Roles :
+Gérer le matériel
+Fournir une abstraction
+Sécuriser
+
+Ndivia pendant un temps fournissait des dll window
+Si les fabricant fournissent les api -> s'insère dans une pensée plus générale et peut poser problème
+
+OS pas juste collection d'api, doit faire fonctionner des choses disjointes ensembles
+-> sécurité
+
+Vision de Stallman et utilisateur : application de base
+
+module noyau : programme chargé avec les binaires de l'OS
+
+ordinateur, au moins
+CPU communiquant avec RAM
+traitement et stockage
+
+CPU Intell
+- 40 fil d'adresse (fait 1 téra d'addresse)
+- 1 pour lecture ou écriture
+- fil de value
+
+Transmision de données
+fils reliés à adresse et values reliées au périphérique
+Intell ajoutte un fil in/out à la place du fil lecture/écriture
+
+CPU 3 GHz facile, RaM 1,5 max -> cache dans le CPU
+
+périphérique ont un fil vers le CPU pour signaler les interruption
+
+registre : mémoire dans le CPU
