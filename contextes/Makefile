@@ -1,7 +1,7 @@
 
-CC = gcc
-FLAGSS = -m32
-EXE=
+CC=gcc
+FLAGSS=-m32
+EXE=lib_contexte
 
 all: $(EXE)
 
@@ -9,7 +9,7 @@ all: $(EXE)
 	$(CC) $(FLAGSS) $<
 
 lib_contexte:lib_contexte.o
-	$(CC) -o $@ $^ $(CFLAGS)
+	$(CC) -o $@ $^ $(FLAGSS)
 
 
 .PHONY: clean
